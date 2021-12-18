@@ -6,7 +6,6 @@ const app=express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
 app.post('/message/',(req,res)=>{
     var line_message=req.body.line.msg;
     //console.log('line_message '+line_message);
