@@ -13,7 +13,7 @@ app.post('/message/',(req,res)=>{
     res.send('line_message is '+line_message);
 });
 
-var server=app.listen(8080,function(){
+var server=app.listen(80,function(){
     var host=server.address().address;
     var port=server.address().port;
 
